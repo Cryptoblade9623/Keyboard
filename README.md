@@ -4,6 +4,11 @@ A custom keyboard with a white sakura theme and a rotary encoder.
 I'm making this keyboard to have an upgrade from my dying membrane keyboard that also have a lot of the keycaps missing.
 I also hope that this will give me some more experience in designing PCBs and 3D models.
 
+![PCB Preview](Keyboard/Pictures/PCB.png)
+![Circuit Schematic](Keyboard/Pictures/Schematic.png)
+![Project Screenshot](Keyboard/Pictures/Screenshot%202026-06-25%20210924.png)
+
+
 | Name | Purpose | Price (USD) | Seller |
 | :--- | :--- | :--- | :--- |
 | Screws & Standoffs | Spacing, mounting, and securing internal circuit boards | $1.35 | AliExpress |
