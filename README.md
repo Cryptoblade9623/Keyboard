@@ -13,7 +13,6 @@ Because it is quite a large keyboard that I will be 3D - printing in different p
 | Name | Purpose | Price (USD) | Seller |
 | :--- | :--- | :--- | :--- |
 | Screws & Standoffs | Spacing, mounting, and securing internal circuit boards | $1.35 | AliExpress |
-| Rubber Feet | Providing grip and preventing surface scratches for electronics | $3.36 | AliExpress |
 | Resistors | Limiting current flow within electrical circuits | $1.26 | AliExpress |
 | PCB Stabilizers | Stabilizing large mechanical keyboard keys (e.g., Spacebar, Shift) | $10.35 | AliExpress |
 | Keycaps | Providing durable, custom keycaps for mechanical keyboards | $7.73 | AliExpress |
