@@ -9,7 +9,7 @@ Because it is quite a large keyboard that I will be 3D - printing in different p
 <img width="1680" height="1050" alt="image" src="https://github.com/user-attachments/assets/f4294cfc-f6a6-4200-9dc6-a1e0cd2e9e93" />
 <img width="1389" height="618" alt="Screenshot 2026-06-25 210934" src="https://github.com/user-attachments/assets/8bfb91c4-39f0-4d81-b5b4-73fac86099c7" />
 
-Name,Purpose,Price,Seller,e
+NName,Purpose,Price,Seller,e
 Screws,Mounting and securing 3D printed parts,$2.23,AliExpress,https://www.aliexpress.com/item/1005008314123679.html?spm=a2g0o.cart.0.0.16e738daMmvBdI&mp=1&pdp_npi=6%40dis%21USD%21USD%202.23%21USD%202.17%21%21USD%202.17%21%21%21%402103828617851600233073312e0d3f%2112000044581940836%21ct%21GB%21-1%21%211%210%21&pdp_ext_f=%7B%22cart2PdpParams%22%3A%7B%22pdpBusinessMode%22%3A%22retail%22%7D%7D
 3D Printed Parts,Physical housing,$3.00,Printing Legion,-
 Stabilizers,Preventing keycap rattle for larger keys,$10.58,AliExpress,https://www.aliexpress.com/item/4001143514438.html?spm=a2g0o.cart.0.0.16e738daMmvBdI&mp=1&pdp_npi=6%40dis%21USD%21USD%2010.58%21USD%209.80%21%21USD%209.80%21%21%21%402103828617851600233073312e0d3f%2112000033301894110%21ct%21GB%21-1%21%211%210%21
