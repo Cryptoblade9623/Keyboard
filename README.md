@@ -9,20 +9,3 @@ Because it is quite a large keyboard that I will be 3D - printing in different p
 <img width="1680" height="1050" alt="image" src="https://github.com/user-attachments/assets/f4294cfc-f6a6-4200-9dc6-a1e0cd2e9e93" />
 <img width="1389" height="618" alt="Screenshot 2026-06-25 210934" src="https://github.com/user-attachments/assets/8bfb91c4-39f0-4d81-b5b4-73fac86099c7" />
 
-
-| Name | Purpose | Price (USD) | Seller |
-| :--- | :--- | :--- | :--- |
-| Screws & Standoffs | Spacing, mounting, and securing internal circuit boards | $1.35 | AliExpress |
-| Resistors | Limiting current flow within electrical circuits | $1.26 | AliExpress |
-| PCB Stabilizers | Stabilizing large mechanical keyboard keys (e.g., Spacebar, Shift) | $10.35 | AliExpress |
-| Keycaps | Providing durable, custom keycaps for mechanical keyboards | $7.73 | AliExpress |
-| Mechanical Switches | Actuating keystrokes quietly and smoothly in hot-swap keyboards | $24.44 | AliExpress |
-| Rotary Encoder | Providing rotary control and navigation inputs | $2.75 | AliExpress |
-| Development Board | Processing core logic, Wi-Fi, and Bluetooth functions | $7.10 | AliExpress |
-| Hot-swap PCB Sockets | Enabling toolless mechanical switch replacement on a custom PCB | $9.32 | AliExpress |
-| USB Type-C Connector | Providing power delivery and data transfer interfaces | $1.73 | AliExpress |
-| Steel Rod Axles | Acting as structural pins or shafts for moving components | $2.04 | Global Sellers |
-| Custom PCB | Main circuit board base for the keyboard matrix and components | $28.80 | JLCPCB |
-| 3D Printed Case | Physical housing or structural frame for the custom keyboard | $3.00 | Printing Legion |
-| Shipping and Taxes - $16.47
-| Grand Total - $119.70
