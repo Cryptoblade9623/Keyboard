@@ -9,6 +9,33 @@ Because it is quite a large keyboard that I will be 3D - printing in different p
 <img width="1680" height="1050" alt="image" src="https://github.com/user-attachments/assets/f4294cfc-f6a6-4200-9dc6-a1e0cd2e9e93" />
 <img width="1389" height="618" alt="Screenshot 2026-06-25 210934" src="https://github.com/user-attachments/assets/8bfb91c4-39f0-4d81-b5b4-73fac86099c7" />
 
+Instructions
+1.Solder all the diodes on to the PCB
+2.Place all the Mill-Max hotswap sockets into their holes
+3.Stick heat resistant tape over them in top rows to keep them in place while soldering
+4.Solder all the hotswap sockets
+5.Solder the pin headers
+6.Solder the ESP32 onto the pin headers
+7.Solder the Ec11x rotary encoder on to the PCB
+8.Flash the ESP32 with the firmware
+9.Screw in the PCB-mount stabilizers
+10.Solder 4 wires onto the 4 pads of the USBC breakout board
+11.Solder 2 small capacitors and 1 big capacitor in parallel on the 5V and GND wires
+12.Place heat shrink tubing to cover the solder joints on the wires 
+13.Superglue the USBC board into its slot inside the Left-Base part
+14.Cut the all the metal rods to 50mm
+15.Join the Base pieces together with the metal rods in their slots
+16.Join all the Border pieces together again using the metal rods
+17.Superglue all the mountain, sakura, grass and tree pieces onto the Scenery Border piece
+18.Superglue both halves of the plate together
+19.Press the heat set inserts into the Border piece with a soldering iron.
+20.Slot the loose wires of the USBC board though the vertical slot hole in the PCB
+21.Solder the USBC wires to the D+, D-, GND and RAW of the MCU
+22.Stack the parts in the order: base, PCB, plate, border and screw them all together using the M3 bolts
+23.Push in the switches
+24.Push in all the keycaps onto their assigned switches
+25.Snap both pieces of the knob together and push the combined knob onto the rotary encoder stem
+And you're done!
 
 | Name | Purpose | Price (USD) | Seller | Link |
 
