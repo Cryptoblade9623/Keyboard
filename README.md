@@ -11,7 +11,9 @@ Because it is quite a large keyboard that I will be 3D - printing in different p
 
 
 | Name | Purpose | Price (USD) | Seller | Link |
+
 | :--- | :--- | :--- | :--- |
+
 | Screws & Standoffs | Spacing, mounting, and securing internal circuit boards | $2.23 | AliExpress |[Link](https://www.aliexpress.com/item/1005008314123679.html?spm=a2g0o.cart.0.0.16e738daMmvBdI&mp=1&pdp_npi=6%40dis%21USD%21USD%202.23%21USD%202.17%21%21USD%202.17%21%21%21%402103828617851600233073312e0d3f%2112000044581940836%21ct%21GB%21-1%21%211%210%21&pdp_ext_f=%7B%22cart2PdpParams%22%3A%7B%22pdpBusinessMode%22%3A%22retail%22%7D%7D)|
 
 | 100nF Capacitors | Providing smooth current flow to the MCU | $2.27 | AliExpress |[Link](https://www.aliexpress.com/item/1005008314123679.html?spm=a2g0o.cart.0.0.16e738daMmvBdI&mp=1&pdp_npi=6%40dis%21USD%21USD%202.23%21USD%202.17%21%21USD%202.17%21%21%21%402103828617851600233073312e0d3f%2112000044581940836%21ct%21GB%21-1%21%211%210%21&pdp_ext_f=%7B%22cart2PdpParams%22%3A%7B%22pdpBusinessMode%22%3A%22retail%22%7D%7D)|
