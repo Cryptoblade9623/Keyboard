@@ -8,15 +8,39 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    container: ghcr.io/qmk/qmk_cli:latest
+
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
 
-    - name: Compile QMK Firmware
-      uses: qmk/qmk-compile-action@v1
-      with:
-        info_json_path: './Files/info.json'
-        keymap_c_path: './Files/keymap.c'
+    - name: Clone QMK Source and Compile
+      run: |
+        # 1. Grab the official foundational framework
+        git clone --depth=1 https://github.com
+        
+        # 2. Inject your files into QMK's local compiler structure
+        # We find out what keyboard you named inside your info.json
+        KB_NAME=$(python3 -c "import json; print(json.load(open('./Files/info.json'))['keyboard_name'])")
+        
+        # Format the name safely to match QMK convention (lowercase, no spaces)
+        KB_FOLDER=$(echo "$KB_NAME" | tr '[:upper:]' '[:lower:]' | tr -d ' ')
+        
+        # Construct the target path inside the QMK directory
+        TARGET_DIR="./qmk_firmware/keyboards/$KB_FOLDER"
+        mkdir -p "$TARGET_DIR/keymaps/default"
+        
+        # Copy your files to the precise compilation slots
+        cp ./Files/info.json "$TARGET_DIR/info.json"
+        cp ./Files/keymap.c "$TARGET_DIR/keymaps/default/keymap.c"
+        
+        # 3. Compile against the correct target keyboard framework
+        cd qmk_firmware
+        qmk setup -y
+        qmk compile -kb "$KB_FOLDER" -km default
+        
+        # 4. Move binaries back to the root folder so the artifact steps find them
+        mv *.hex *.bin *.uf2 .. 2>/dev/null || true
 
     - name: Upload compiled binary
       uses: actions/upload-artifact@v4
