@@ -14,8 +14,12 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
 
-    - name: Compile Firmware
+    - name: Initialize and Compile
       run: |
+        # Initialize the base workspace requirements
+        qmk setup -y
+        
+        # Compile your custom configuration files
         qmk compile ./Files/info.json
 
     - name: Upload compiled binary
@@ -26,4 +30,3 @@ jobs:
           *.hex
           *.bin
           *.uf2
-
