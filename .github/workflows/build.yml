@@ -1,0 +1,29 @@
+name: Build QMK Firmware
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container: ghcr.io/qmk/qmk_cli:latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Run QMK Lint
+      run: |
+        qmk lint ./info.json
+
+    - name: Compile Firmware
+      run: |
+        # This copies your local files into the correct internal layout and compiles
+        qmk compile ./info.json
+
+    - name: Upload compiled binary
+      uses: actions/upload-artifact@v4
+      with:
+        name: keyboard-firmware
