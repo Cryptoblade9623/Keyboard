@@ -16,14 +16,17 @@ jobs:
 
     - name: Run QMK Lint
       run: |
-        qmk lint ./info.json
+        qmk lint ./Files/info.json
 
     - name: Compile Firmware
       run: |
-        # This copies your local files into the correct internal layout and compiles
-        qmk compile ./info.json
+        qmk compile ./Files/info.json
 
     - name: Upload compiled binary
       uses: actions/upload-artifact@v4
       with:
         name: keyboard-firmware
+        path: |
+          *.hex
+          *.bin
+          *.uf2
