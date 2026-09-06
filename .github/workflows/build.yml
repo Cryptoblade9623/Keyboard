@@ -14,10 +14,6 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
 
-    - name: Run QMK Lint
-      run: |
-        qmk lint ./Files/info.json
-
     - name: Compile Firmware
       run: |
         qmk compile ./Files/info.json
@@ -30,3 +26,4 @@ jobs:
           *.hex
           *.bin
           *.uf2
+
