@@ -55,7 +55,3 @@ jobs:
           *.hex
           *.bin
           *.uf2
-        path: |
-          *.hex
-          *.bin
-          *.uf2
