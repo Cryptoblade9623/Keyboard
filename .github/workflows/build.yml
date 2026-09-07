@@ -8,43 +8,46 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    container: ghcr.io/qmk/qmk_cli:latest
 
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
 
-    - name: Compile QMK Firmware
-      uses: qmk/qmk-compile-action@v1
+    - name: Set up Python
+      uses: actions/setup-python@v5
       with:
-        info_json_path: './Files/Firmware/info.json'
-        keymap_c_path: './Files/Firmware/keymap.c'
-    - name: Clone QMK Source and Compile
+        python-version: '3.11'
+
+    - name: Install QMK CLI Toolchain
+      run: |
+        python3 -m pip install --upgrade pip
+        python3 -m pip install qmk
+
+    - name: Clone QMK Library and Inject Files
       run: |
         # 1. Grab the official foundational framework
         git clone --depth=1 https://github.com
         
-        # 2. Inject your files into QMK's local compiler structure
-        # We find out what keyboard you named inside your info.json
-        KB_NAME=$(python3 -c "import json; print(json.load(open('./Files/info.json'))['keyboard_name'])")
-        
-        # Format the name safely to match QMK convention (lowercase, no spaces)
+        # 2. Extract your custom keyboard name dynamically from your Firmware folder
+        KB_NAME=$(python3 -c "import json; print(json.load(open('./Firmware/info.json'))['keyboard_name'])")
         KB_FOLDER=$(echo "$KB_NAME" | tr '[:upper:]' '[:lower:]' | tr -d ' ')
         
-        # Construct the target path inside the QMK directory
+        # 3. Create the required path layout inside the cloned firmware repository
         TARGET_DIR="./qmk_firmware/keyboards/$KB_FOLDER"
         mkdir -p "$TARGET_DIR/keymaps/default"
         
-        # Copy your files to the precise compilation slots
-        cp ./Files/info.json "$TARGET_DIR/info.json"
-        cp ./Files/keymap.c "$TARGET_DIR/keymaps/default/keymap.c"
+        # 4. Safely move your project files into QMK's tracking folders
+        cp ./Firmware/info.json "$TARGET_DIR/info.json"
+        cp ./Firmware/keymap.c "$TARGET_DIR/keymaps/default/keymap.c"
         
-        # 3. Compile against the correct target keyboard framework
+        # 5. Move inside the core framework and prepare the environment dependencies
         cd qmk_firmware
         qmk setup -y
+        
+        # 6. Build your keyboard using your specific keymap
         qmk compile -kb "$KB_FOLDER" -km default
         
-        # 4. Move binaries back to the root folder so the artifact steps find them
+        # 7. Relocate your compiled flashing binaries back to the root folder
         mv *.hex *.bin *.uf2 .. 2>/dev/null || true
 
     - name: Upload compiled binary
