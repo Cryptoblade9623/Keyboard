@@ -14,6 +14,11 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
 
+    - name: Compile QMK Firmware
+      uses: qmk/qmk-compile-action@v1
+      with:
+        info_json_path: './Files/Firmware/info.json'
+        keymap_c_path: './Files/Firmware/keymap.c'
     - name: Clone QMK Source and Compile
       run: |
         # 1. Grab the official foundational framework
@@ -46,6 +51,10 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: keyboard-firmware
+        path: |
+          *.hex
+          *.bin
+          *.uf2
         path: |
           *.hex
           *.bin
