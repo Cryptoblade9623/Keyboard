@@ -8,7 +8,8 @@ Because it is quite a large keyboard that I will be 3D - printing in different p
 
 <img width="1680" height="1050" alt="image" src="https://github.com/user-attachments/assets/993c7ce0-e160-4a56-a856-d63abc672f12" />
 <img width="1680" height="1050" alt="image" src="https://github.com/user-attachments/assets/f4294cfc-f6a6-4200-9dc6-a1e0cd2e9e93" />
-<img width="1389" height="618" alt="Screenshot 2026-06-25 210934" src="https://github.com/user-attachments/assets/8bfb91c4-39f0-4d81-b5b4-73fac86099c7" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/49eaeb55-71f2-4d73-b789-135876c9ec4d" />
+
 
 
 Instructions
